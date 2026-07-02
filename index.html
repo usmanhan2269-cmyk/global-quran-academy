@@ -2,50 +2,130 @@
 <html>
 <head>
     <title>Global Quran Academy</title>
+
     <style>
         body {
-            font-family: Arial;
             margin: 0;
-            background: #f4f4f4;
+            font-family: Arial;
         }
-        header {
+
+        /* NAVBAR */
+        nav {
             background: #0a5c36;
-            color: white;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
-        section {
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1587614382346-4ec1e9f6b3c7');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        /* COURSES */
+        .courses {
             padding: 40px;
             text-align: center;
         }
+
+        .card {
+            display: inline-block;
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        /* BUTTON */
         .btn {
             background: #0a5c36;
             color: white;
             padding: 10px 20px;
-            text-decoration: none;
             border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* WHATSAPP BUTTON */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: green;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
         }
     </style>
 </head>
+
 <body>
 
-<header>
+<!-- NAVBAR -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="hero">
     <h1>Global Quran Academy</h1>
     <p>Learn Quran Online with Expert Teachers</p>
-</header>
-
-<section>
-    <h2>Our Courses</h2>
-    <p>✔ Quran Reading<br>✔ Tajweed<br>✔ Hifz Program</p>
     <br>
     <a href="#" class="btn">Join Now</a>
-</section>
+</div>
 
-<section>
+<!-- COURSES -->
+<div class="courses">
+    <h2>Our Courses</h2>
+
+    <div class="card">
+        <h3>Quran Reading</h3>
+        <p>Learn to read Quran properly</p>
+    </div>
+
+    <div class="card">
+        <h3>Tajweed</h3>
+        <p>Improve pronunciation</p>
+    </div>
+
+    <div class="card">
+        <h3>Hifz Program</h3>
+        <p>Memorize the Quran</p>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact">
     <h2>Contact Us</h2>
     <p>Email: info@quranacademy.com</p>
     <p>WhatsApp: +123456789</p>
-</section>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="#" class="whatsapp">💬</a>
 
 </body>
 </html>
